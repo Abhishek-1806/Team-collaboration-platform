@@ -34,10 +34,8 @@ const Signup = () => {
 
     // Add API call logic here
     try {
-      console.log('Submitting form:', formData);
       // Example API call to signup endpoint
       const response = await axios.post('api/auth/signup', formData);
-      console.log(response.data);
 
       // Redirect to login page after successful signup
       navigate('/login', { replace: true });
