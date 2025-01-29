@@ -49,7 +49,7 @@ function Layout() {
       </div>
     </div>
   ) : (
-    <Navigate to='/log-in' state={{ from: location }} replace />
+    <Navigate to='/login' state={{ from: location }} replace />
   );
 }
 
@@ -60,7 +60,7 @@ function App() {
       <div className='w-full min-h-screen bg-[#f3f4f6] '>
       <Routes>
         <Route element={<Layout />}>
-          <Route index path='/' element={<Navigate to='/dashboard' />} />
+          <Route index path='/' element={<Navigate to='/login' />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/tasks' element={<Tasks />} />
           <Route path="/profile" element={<Profile />} />
