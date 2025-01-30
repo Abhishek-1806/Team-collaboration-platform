@@ -25,7 +25,7 @@ npm install
 Create a `.env` file in the root directory with the following variables:
 ```env
 PORT=8000
-DATABASE_URL=mysql://user:password@localhost:3306/database_name
+DATABASE_URL=postgresql://username:password@hostname:port/database_name
 JWT_SECRET=your_jwt_secret_key
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
@@ -68,7 +68,7 @@ npm start
 ## Dependencies
 
 - express - Web framework
-- mysql2 - MySQL client
+- pg - Postgre client
 - sequelize - ORM for database operations
 - jsonwebtoken - JWT authentication
 - bcryptjs - Password hashing
