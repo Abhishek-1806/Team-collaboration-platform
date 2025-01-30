@@ -64,7 +64,7 @@ const Navbar = ({ userRole, userId, toggleSidebar }) => {
     <div className="w-full bg-white shadow-sm py-4 px-4">
       <div className="flex items-center justify-between">
         {/* Logo Section */}
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/")}>
+        <div className="flex items-center gap-2 cursor-pointer" onClick={() => navigate("/dashboard")}>
           <div className="bg-green-600 p-2 rounded-full ml-12">
             <MdOutlineAddTask className="text-white text-2xl" />
           </div>
